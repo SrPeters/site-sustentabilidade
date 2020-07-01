@@ -1,0 +1,447 @@
+
+/* Configurações iniciais */
+
+*{
+    box-sizing: border-box;
+}
+body, p, h1, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Helvetica, Arial;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    font-family: Helvetica, Arial;
+}
+.bod{
+    background-color: rgb(228, 228, 228);
+}
+
+
+/* Menu */
+
+header { background-color: #000; }
+#logo { margin: 20px 0px 20px 40px; width: 60px; height: 60px;}
+.link_menu { font-size: 20px; margin-top:25px; }
+.link_menu a{ color: white !important; padding:10px;  }
+.link_menu a:hover{ background-color:rgb(102, 102, 102) !important; color: white !important; border-radius: 8px; }
+.link_menu2{
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: -450px;
+}
+.link_menu2 a{
+    color: white !important;
+    padding: 10px;
+}
+
+/* Parágrafo */
+
+.paragrafo-bg{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.4);
+    min-height: 500px;
+    margin-top: 50px;
+}
+.paragrafo{
+    display: flex;
+    min-height: 500px;
+}
+.paragrafo h1{
+    margin: 15px 0px 55px 90px;
+    width: fit-content;
+    font-weight: bold;
+    padding: 20px 0px;
+    font-size: 40px;
+    border-bottom: 3px solid #179b6c;
+}
+.paragrafo p{
+    margin-left: 90px;
+    width: 70%;
+    min-height: 260px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgba(143, 143, 143, 0.5);
+    text-align: justify;
+}
+.paragrafo p a{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(63, 110, 187);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.paragrafo p a:hover{
+    background-color: rgb(64, 135, 248);
+}
+.paragrafo img{
+    align-self: center;
+    margin-right: 90px;
+    box-shadow: 4px 4px 15px;
+}
+.p2{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.p2 img{
+    margin-left: 90px;
+}
+.p2 p{
+    max-width: 630px;
+    margin-right: 90px;
+    padding-bottom: 20px;
+}
+@media(max-width: 1210px){
+    .paragrafo{
+        flex-direction: column;
+    }
+    .paragrafo img{
+        width: 350px;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* Corpo do Site - Cards*/
+
+.paraonde{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.paraonde p{
+    font-size: 40px;
+    padding: 30px 0px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 50px 0px;
+    border-bottom: 3px solid #179b6c;
+}
+
+.itens-bg{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 700px;
+    margin-bottom: 100px;
+}
+.itens{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    min-height: 700px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.caixa{
+    background-color: rgba(187, 187, 187, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 30px 45px;
+    box-shadow: 2px 2px 15px;
+}
+.caixa p{
+    font-size: 25px;
+    padding: 20px 0px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+/* Escala dos Cards */
+
+.caixa1{
+    transition: .5s;
+}
+
+.caixa1:hover{
+    transform: scale(1.05);
+}
+.caixa2{
+    transition: .5s;
+}
+
+.caixa2:hover{
+    transform: scale(1.05);
+}
+.caixa3{
+    transition: .5s;
+}
+
+.caixa3:hover{
+    transform: scale(1.05);
+}
+.caixa4{
+    transition: .5s;
+}
+
+.caixa4:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* Cards Quem Somos */
+
+.cards{
+    display: flex;
+    width: 60%;
+    min-height: 680px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: -2;
+}
+
+@media (max-width: 1500px){
+    .cards{
+        width: 75%;
+    }
+}
+
+@media (max-width: 1200px){
+    .cards{
+        width: 100%;
+    }
+}
+
+.cardbox{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    transition: 0.5s;
+}
+.cardbox .cardimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cardbox:hover{
+    height: 440px;
+}
+
+.cardbox:hover .cardimg img{
+    opacity: 1;
+}
+
+.cardbox .cardimg img{
+    max-width: 100%;
+    opacity: 0.25;
+    transition: 0.5s;
+}
+
+.cardbox:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background-color: #545E74;
+}
+
+.cardbox .content{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cardbox:hover .content{
+    opacity: 1;
+}
+
+.cardbox .content h2{
+    font-size: 20px;
+    color: white;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.cardbox .content h2 span{
+    font-size: 14px;
+    color: white;
+    font-weight: 250;
+    letter-spacing: 2px;
+}
+.links_gl{
+    height: 80px;
+}
+
+.links_gl a{
+    margin: 0px 9px;
+}
+
+
+
+/* Notícias */
+
+.not-bg{
+    margin: 0px auto 60px;
+    width: 90%;
+    padding: 30px;
+    min-height: 900px;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+.not{
+    width: 95%;
+    margin: 40px auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px;
+    background-color: rgb(228, 228, 228);
+}
+.not p{
+    font-size: 18px;
+}
+.not p a{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(63, 110, 187);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.not p a:hover{
+    background-color: rgb(64, 135, 248);
+}
+.not img{
+    width: 300px;
+    margin-left: 45px;
+    box-shadow: 2px 2px 15px;
+}
+.pocor{
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1050px){
+    .not{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .not img{
+        margin: 50px 0px;
+    }
+}
+
+/* Textos feitos em Pesquisa */
+
+.corpo-bg{
+    width: 60%;
+    margin: 0 auto 60px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 40px 0px;
+}
+.corpo{
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.corpo p {
+    font-size: 19px;
+}
+
+.subtitles{
+    font-weight: bold;
+    border-bottom: 3px solid rgb(233, 145, 30);
+    width: fit-content;
+    padding-bottom: 5px;
+}
+.tipos li{
+    font-size: 18px;
+}
+
+.paraonde2{
+    max-width: 90%;
+    margin: 70px auto 0px;
+    display: flex;
+    justify-content: center;
+}
+.paraonde2 p{
+    font-size: 40px;
+    padding: 30px 0px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 50px 0px;
+    border-bottom: 3px solid #9c1414;
+}
+.paraondeinside{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.paraondeinside p{
+    font-size: 40px;
+    padding: 30px 0px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 50px 0px;
+    border-bottom: 3px solid #179b6c;
+}
+
+
+/* Cards dos textos de Pequisa */
+
+.edit1{ transition: .7s; background-color: rgba(187, 187, 187, 0.8); box-shadow: 5px 5px 20px;}
+.edit2{ transition: .7s; background-color: rgba(187, 187, 187, 0.8); box-shadow: 5px 5px 20px;}
+.edit3{ transition: .7s; background-color: rgba(187, 187, 187, 0.8); box-shadow: 5px 5px 20px;}
+
+.edit1:hover{ transform: scale(1.05); }
+.edit2:hover{ transform: scale(1.05); }
+.edit3:hover{ transform: scale(1.05); }
+
+.Btn1 { text-align: center; margin-top: 5px;}
+.Btn2 { text-align: center; margin-top: 5px; }
+.Btn3 { text-align: center; margin-top: 5px; }
+
+.mundo { text-align: center; }
+.brasil { text-align: center; }
+.regional { text-align: center; }
+#middle { margin: 50px 0;  }
+.caption h3{ text-align: center; }
+
+
+
+
+
+/* Footer */
+
+footer { background-color: #222; min-height: 180px; color:#999; padding:40px; }
+#logoft { margin: 15px 0px 12px 1px; width: 60px; height: 60px; }
+.lista_footer { margin-top:35px; }

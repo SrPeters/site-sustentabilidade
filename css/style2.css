@@ -1,0 +1,44 @@
+/* Style.css */
+* { margin:0; padding: 0; }
+footer { background-color: #222; min-height: 180px; color:#999; padding:40px; }
+header { background-color: #000; }
+nav { min-height: 90px; margin-bottom: 0 !important;  }
+h3 { text-align: center; }
+h2 { text-decoration: none; }
+
+#main { padding: 20px; background: linear-gradient(135deg, #35b8b0 0%,#1c799d 100%);  }
+#main img  { max-height: 400px; }
+#middle { margin: 50px 0; }
+#nmst { margin-left: 120px; margin-top: -70px; }
+#logo { margin: 20px 0px 20px 40px; width: 60px; height: 60px;}
+#logoft { margin: 15px 0px 12px 1px; width: 60px; height: 60px; }
+#notícias { margin: 50px 0;}
+#home {margin: 50px 0;  }
+#home p { text-align: justify; color:#999; font-size: 18px; line-height: 1.8; padding-top:20px;}
+#oquee { margin: 50px 0;}
+
+
+
+.Btn1 { text-align: center; margin-top: 5px;}
+.Btn2 { text-align: center; margin-top: 5px; }
+.Btn3 { text-align: center; margin-top: 5px; }
+.mundo { text-align: center; }
+.brasil { text-align: center; }
+.regional { text-align: center; }
+.edit1{ transition: .7s; background-color: rgba(187, 187, 187, 0.8); box-shadow: 5px 5px 20px;}
+.edit2{ transition: .7s; background-color: rgba(187, 187, 187, 0.8); box-shadow: 5px 5px 20px;}
+.edit3{ transition: .7s; background-color: rgba(187, 187, 187, 0.8); box-shadow: 5px 5px 20px;}
+.lista_footer { margin-top:35px; }
+.link_menu { font-size: 20px; margin-top:25px; }
+.link_menu a{ color: white !important; padding:10px;  }
+.link_menu a:hover{ background-color:#686868 !important; color: white !important; border-radius: 8px; }
+.center { text-align: center }
+.paraonde{ max-width: 90%; margin: 0 auto; display: flex; justify-content: center; }
+.paraonde p { color: rgba(0, 0, 0, 0.892); font-size: 40px; padding: 10px 0px; width: fit-content; font-weight: bold; margin: 70px 0px; border-bottom: 3px solid #b7c0f3; }
+.Sobre { margin-left: 130px; margin-top: 10px; }
+.edit1:hover{ transform: scale(1.05); }
+.edit2:hover{ transform: scale(1.05); }
+.edit3:hover{ transform: scale(1.05); }
+.link_menu2 { font-size: 35px; margin-top: 25px; margin-left: -450px;}
+.link_menu2 a{ color: white !important; padding:10px;  }
+
